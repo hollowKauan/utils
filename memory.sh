@@ -1,1 +1,1 @@
-free --mebi | awk '(NR==2){ printf("RAM: %.2f GB / %.2f GB", $3/1024, $2/1024) }'
+free --mebi | awk '(NR==2){ printf("%.2f GB / %.2f GB", $3/1024, $2/1024) }'
